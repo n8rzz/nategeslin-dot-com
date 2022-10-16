@@ -1,6 +1,6 @@
 ---
 name: Nate Geslin
-avatar: /static/images/avatar.png
+avatar: /static/images/nate-geslin-avatar-2021.png
 occupation: Senior UI Lead
 company: Parallax
 email: 'hello@nategeslin.com'
