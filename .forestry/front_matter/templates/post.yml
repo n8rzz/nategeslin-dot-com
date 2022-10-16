@@ -30,12 +30,13 @@ fields:
   name: hero_image
   label: hero_image
 - type: text
-  name: Summary
-  label: Summary
+  name: summary
+  label: summary
   config:
     required: true
 - type: boolean
-  name: Draft
-  label: Draft
+  name: draft
+  label: draft
   config:
     required: true
+  default: true
