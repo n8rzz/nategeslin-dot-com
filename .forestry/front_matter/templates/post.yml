@@ -1,5 +1,5 @@
 ---
-label: Blog
+label: Post
 hide_body: false
 fields:
   - type: text
@@ -39,8 +39,3 @@ fields:
     label: Draft
     config:
       required: true
-pages:
-  - src/posts/coastal-redwood.md
-  - src/posts/doug-fir.md
-  - src/posts/rocky-mountain-juniper.md
-  - src/posts/the-oldest-living-organism-on-the-planet.md
