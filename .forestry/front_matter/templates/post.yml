@@ -9,17 +9,17 @@ fields:
       required: true
   - name: author
     type: select
-    default: Nate Geslin
+    label: author
+    description: Choose author's name, add new author via Author List in  Sidebar
+    default: ''
     config:
       required: false
       options: []
       source:
-        type: documents
-        section: author-list
-        file: data/authors/authors.json
-        path: authors
-    label: author
-    description: Choose author's name, add new author via Author List in  Sidebar
+        type: pages
+        section: authors
+        file: data/authors.yml
+        path:
   - type: datetime
     name: date
     label: date
