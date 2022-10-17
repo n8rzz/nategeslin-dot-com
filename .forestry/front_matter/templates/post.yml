@@ -2,40 +2,44 @@
 label: Post
 hide_body: false
 fields:
+  - type: boolean
+    name: Draft
+    label: Draft
+    config:
+      required: true
   - type: text
     name: title
     label: title
     config:
       required: true
-  - name: author
-    type: select
-    label: author
-    description: Choose author's name, add new author via Author List in  Sidebar
-    default: ''
+  - type: textarea
+    name: summary
+    label: summary
     config:
-      required: false
-      options: []
+      required: true
+  - type: file
+    name: hero_image
+    label: hero_image
+  - type: tag_list
+    name: tags
+    label: Tags
+  - name: authors
+    type: list
+    label: author
+    description: Choose an Author
+    required: true
+    config:
+      use_select: true
       source:
-        type: pages
-        section: authors
-        file: data/authors.yml
-        path:
+        type: simple
+      options:
+        - Nate Geslin
   - type: datetime
     name: date
     label: date
     config:
       required: true
     default: now
-  - type: file
-    name: hero_image
-    label: hero_image
-  - type: text
-    name: summary
-    label: summary
-    config:
-      required: true
-  - type: boolean
-    name: Draft
-    label: Draft
-    config:
-      required: true
+pages:
+  - data/blog/what-i-look-for-when-i-hire-software-engineers.mdx
+  - data/blog/speed-up-jest-tests-by-using-the-correct-environment.mdx
