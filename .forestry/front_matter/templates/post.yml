@@ -58,4 +58,5 @@ fields:
   label: Canonical Url
 pages:
 - data/blog/speed-up-jest-tests-by-using-the-correct-environment.mdx
+- data/blog/the-time-machine.mdx
 - data/blog/what-i-look-for-when-i-hire-software-engineers.mdx
