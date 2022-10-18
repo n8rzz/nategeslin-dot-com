@@ -12,6 +12,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
+  templates:
+  - post
 - type: heading
   label: Config
 - type: document
