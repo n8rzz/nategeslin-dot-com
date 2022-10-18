@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: /admin
+admin_path: '/admin'
 webhook_url:
 sections:
   - type: heading
@@ -12,6 +12,8 @@ sections:
     create: documents
     match: '**/*'
     new_doc_ext: md
+    templates:
+      - post
   - type: heading
     label: Config
   - type: document

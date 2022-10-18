@@ -2,60 +2,62 @@
 label: Post
 hide_body: false
 fields:
-  - type: boolean
-    name: Draft
-    label: Draft
-    config:
-      required: true
-  - type: datetime
-    name: date
-    label: date
-    default: now
-    config:
-      date_format: MMMM DD, YYYY
-      required: true
-  - type: text
-    name: title
-    label: title
-    config:
-      required: true
-  - type: textarea
-    name: summary
-    label: summary
-    config:
-      required: true
-  - type: file
-    name: hero_image
-    label: hero_image
-  - type: tag_list
-    name: tags
-    label: Tags
-  - name: authors
-    type: list
-    label: author
-    description: Choose an Author
-    config:
-      required: true
-      use_select: true
-      source:
-        type: simple
-      options:
-        - Nate Geslin
-  - name: layout
-    type: list
-    label: Layout
-    default: PostLayout
-    config:
-      required: true
-      use_select: true
-      source:
-        type: simple
-      options:
-        - PostLayout
-        - PostSimple
-  - name: canonicalUrl
-    type: text
-    label: Canonical Url
+- type: boolean
+  name: Draft
+  label: Draft
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Publish Date
+  default: now
+  config:
+    date_format: MMMM DD, YYYY
+    required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+  description: Title of the post
+- type: textarea
+  name: summary
+  label: Summary
+  config:
+    required: true
+- type: file
+  name: hero_image
+  label: Hero Image
+- type: tag_list
+  name: tags
+  label: Tags
+- name: authors
+  type: list
+  label: Author
+  description: Choose an Author
+  config:
+    required: true
+    use_select: true
+    source:
+      type: simple
+    options:
+    - Nate Geslin
+- name: layout
+  type: list
+  label: Layout
+  default: PostLayout
+  config:
+    required: true
+    use_select: true
+    source:
+      type: simple
+    options:
+    - PostLayout
+    - PostSimple
+- name: canonicalUrl
+  type: text
+  label: Canonical Url
 pages:
-  - data/blog/what-i-look-for-when-i-hire-software-engineers.mdx
-  - data/blog/speed-up-jest-tests-by-using-the-correct-environment.mdx
+- data/blog/speed-up-jest-tests-by-using-the-correct-environment.mdx
+- data/blog/the-time-machine.mdx
+- data/blog/what-i-look-for-when-i-hire-software-engineers.mdx
