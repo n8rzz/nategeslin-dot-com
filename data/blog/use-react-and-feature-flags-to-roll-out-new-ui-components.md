@@ -2,7 +2,6 @@
 date: 2021-10-31T00:00:00-05:00
 layout:
 - PostLayout
-- PostLayout
 Draft: false
 title: Use React and Feature Flags To Roll Out New UI Components
 summary: At Parallax we released a sweeping update to our user interface. What follows
