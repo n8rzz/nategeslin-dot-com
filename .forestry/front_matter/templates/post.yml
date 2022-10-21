@@ -59,4 +59,5 @@ fields:
   label: Canonical Url
 pages:
 - data/blog/speed-up-jest-tests-by-using-the-correct-environment.mdx
+- data/blog/use-react-and-feature-flags-to-roll-out-new-ui-components.md
 - data/blog/what-i-look-for-when-i-hire-software-engineers.mdx
