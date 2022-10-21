@@ -1,9 +1,9 @@
 ---
-date: 2022-10-20T20:43:27-05:00
+date: 2021-10-31T00:00:00-05:00
 layout:
 - PostLayout
 - PostLayout
-Draft: true
+Draft: false
 title: Use React and Feature Flags To Roll Out New UI Components
 summary: At Parallax we released a sweeping update to our user interface. What follows
   is an explanation of one small part that made the whole thing possible.
@@ -17,11 +17,9 @@ tags:
 authors:
 - Nate Geslin
 canonicalUrl: ''
+sub_heading: With The Flip of A Switch
 
 ---
-***
-
-#### With The Flip of A Switch
 
 ![](https://cdn-images-1.medium.com/max/1600/0*sViPWB4sXg5xE1TT)
 
