@@ -9,7 +9,7 @@ draft: false
 summary: The blog template supports posts in nested sub-folders. This can be used
   to group posts of similar content e.g. a multi-part course. This post is itself
   an example of a nested route!
-Draft: false
+Draft: true
 
 ---
 # Nested Routes
