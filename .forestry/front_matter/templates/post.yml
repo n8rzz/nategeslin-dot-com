@@ -59,6 +59,7 @@ fields:
   type: text
   label: Canonical Url
 pages:
+- data/blog/a-beginner-s-guide-to-building-shareable-react-components/a-beginner-s-guide-to-building-shareable-react-components-part-1-theory-copy.md
 - data/blog/a-beginner-s-guide-to-building-shareable-react-components/a-beginner-s-guide-to-building-shareable-react-components-part-1-theory.md
 - data/blog/how-i-lost-auto-formatting-in-webstorm.md
 - data/blog/improve-build-times-by-speeding-up-jest-tests-with-multiple-suites.md
