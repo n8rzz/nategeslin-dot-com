@@ -1,10 +1,10 @@
 ---
-date: 2022-10-21T20:20:37-05:00
+date: 2022-01-25T20:20:37-06:00
 layout:
 - PostLayout
 Draft: true
-title: A Beginner's Guide To Building Shareable React Components, Part 1: Theory-(copy)
-sub_heading: A solid plan leads to a solid foundation
+title: 'A Beginner’s Guide To Building Shareable React Components, Part 2: Planning'
+sub_heading: Let’s put some of the theory from Part 1 to work
 summary: Planning for shareable components is similar no matter the library. Today
   I talk about some of the theory behind planning new React components.
 tags:
@@ -12,181 +12,206 @@ tags:
 - Planning
 - React Components
 - Software Development
-- Reactjs
+- JavaScript Development
 authors:
 - Nate Geslin
 canonicalUrl: ''
 
 ---
-![](https://cdn-images-1.medium.com/max/1600/0*gl9VQkgWN_AS-JW7)Photo by [Barn Images](https://unsplash.com/@barnimages?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
+![](https://cdn-images-1.medium.com/max/1600/0*TQcAFy76hnzWI4TS)Photo by [Johannes Plenio](https://unsplash.com/@jplenio?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
-Over the years, I have been lucky enough to be part of several projects where we built component libraries. Or built components that were shared across multiple projects. Most of these projects used [React](https://reactjs.org/), some used [Angular](https://angular.io/). The strategies behind planning shareable components is similar no matter the library or framework.
+Welcome to Part 2 of **A Beginner’s Guide To Building Shareable React Components** Series. In [Part 1](https://nategeslin.medium.com/a-beginners-guide-to-building-shareable-react-components-part-1-theory-836488f838a0) of this series**,** I wrote about the theory behind planning sharable react components.
 
-Planning components is possibly the most important part of building components. Making decisions up front about _how_ to build something is extremely important. Frequently we make these decisions on the fly, it gets overlooked, and we dive right into building.
+[**A Beginner’s Guide To Building Shareable React Components, Part 1: Theory**  
+_A solid plan leads to a solid foundation_nategeslin.medium.com](https://nategeslin.medium.com/a-beginners-guide-to-building-shareable-react-components-part-1-theory-836488f838a0 "https://nategeslin.medium.com/a-beginners-guide-to-building-shareable-react-components-part-1-theory-836488f838a0")
 
-This is a mistake. It may be fast now, and it may feel like you’re saving time now.
+Today, we’re going to put that theory to work and plan out a sharable react component!
 
-You’re not.
+### Caveats
 
-It **_will_** cost you much more time in the future. Not planning is expensive.
+I’ll add the same caveats here as I did in Part 1. I’m not a designer. I like to think I have a good eye for design, but I can’t design my way out of a cardboard box. I’m an engineer.
 
-***
+This is something of a non-sensical component. We’re going to use it here to help illustrate how we might plan this out.
 
-Today we are going to talk about some of the things I like to do when planning components. These aren’t hard and fast rules, just things I’ve found success with.
+Since we’re living in a bit of a fantasy world with this exercise, let’s also assume the following:
 
-It’s important to note, the output of this first phase is not code. The output of this work is a blueprint someone could use to build a component_._ In real life, this is the sort of work I would do when planning work for my team. I don’t always go this deep. I do when there are a lot of decisions to be made. Making some, not all, of those decisions up front helps development move efficiently.
-
-### Design
-
-I’m not a designer. I like to think I have a good eye for things, but I couldn’t design my way out of a cardboard box. I’m an engineer. For the sake of this series, and with all that in mind, it may be helpful to reference the following design while you read.
-
-![](https://cdn-images-1.medium.com/max/1600/1*99Te06XzOxbaxqVa7rBg9A.png)Card or Accordion component with Steve Zissou, from The Life Aquatic ([https://www.fillmurray.com/375/375](https://www.fillmurray.com/375/375 "https://www.fillmurray.com/375/375"))
-
-This is a silly design, I know. This component isn’t necessarily supposed to be useful in real life. Instead, its purpose is to provide something for us to design, build and test.
-
-In a _to-be-written-article_ we’ll go over how to break this down using the techniques I describe here.
-
-### Component Libraries
-
-This series assumes the deliverables will be written from scratch. In real life, this may not always be the case. There are all kinds of component libraries out there and it is not uncommon for teams to use these. It can speed up the work. It can also slow down the work.
-
-Thankfully, I’m not going to argue for or against component libraries today. Just know that they are a thing and, if a team is using them, may invalidate most of what you’re about to read.
+* The scope of this component is two different areas of an app
+* We don’t know if there are plans to use this elsewhere, but it’s possible
+* The project we are building this for is small, but growing
+* There are some shared components built already
+* We assume there are many more components to come, but as of yet maybe only 20 or so are built
 
 ***
+
+### Brief
+
+Here is what we’re going to be planning.
+
+![](https://cdn-images-1.medium.com/max/1600/1*99Te06XzOxbaxqVa7rBg9A.png)
+
+This super-awesome-totally-practical component can be found on [Figma](https://www.figma.com/file/IUAl0fGpSOBYzwSIfAnWXs/shareable-react-components?node-id=0%3A1). This design includes enough information for us to start planning things out. There are some gaps here, though, and we will likely end this process with some assumptions and some questions.
+
+It’s okay that we don’t/won’t have all the answers at this stage. Remember we are _planning_, we are not building (yet). There is still time for designs to change.
+
+Okay, let’s get started!
 
 ### Flexibility
 
-If I had a dollar for every time requirements changed, I’d need a rather large piggy bank. Plan on requirements changing. Plan for your component to be able to easily respond to change. Or have a plan for supporting new requirements. It might surprise you that sometimes the best way forward is _not_ to extend an existing component.
+The very first thing I see with this design is that it looks like we have two main variations.
 
-Throughout this process, you should always be thinking about flexibility. If requirements change, can your component adapt or will it need sweeping changes?
+![](https://cdn-images-1.medium.com/max/1600/1*t0LNNH5Ma8xMiOWEcskvYQ.png)Two variations of our component
 
-#### To be flexible or not?
+Variation #1 is a basic card. Pretty straightforward, a title, an image, some copy, and a Read More link. It also looks like there is some truncation happening there.
 
-Should your component be built to be flexible? Sometimes it does not make sense for a component to be flexible at all and instead should be very rigid. A component is going to solve one specific problem. In those cases, adding flexibility doesn’t make sense at all. Flexibility may actually make your component brittle.
+Variation #2 appears to be an interactive accordion. When expanded, the accordion looks nearly identical to the basic card.
 
-That should be avoided.
+![](https://cdn-images-1.medium.com/max/1600/1*ZlbiTIYFagG1PYaxTK1UMw.png)Variation #1 (left) without a trigger, and variation #2 (right) with an accordion trigger
 
-Over time you’ll develop a feel for what sorts of components should be flexible and which ones should not be. Also, don’t spend too much time thinking about every little thing that could change in the future. At this phase it’s important to develop an opinion. What could happen next when and if requirements change? You don’t need much more than an opinion, so be careful to not get lost in the weeds here.
+**Decision point**: Do we build two components or do we build one to handle both cases?
+
+For now, since we’re moving fast and the use-case for this component is relatively small, we’re going to build a single component. However, our artifacts are going to call this decision out. That in the future we may want to split this up.
 
 ### Boundaries
 
-The absolute first thing I do when I start planning a new component is decide where the boundaries need to be. This is one of the most important things to consider early on.
+This is a pretty basic component, at least on the surface. Most of what this component needs, we can assume, will be supplied from a parent. The accordion part is an important part to decide on, though. Should that be controlled by a parent or not?
 
-What should this component care about? Does it have state? Does it need to care about events? How much layout should this component control?
+Personally, I think it makes sense to control that from within the component itself. However, we should expose a prop that would allow for defaulting an open state on render.
 
-These are things that must be decided on first before you can start sketching out API contracts.
+    interface IProps {  isExpanded?: boolean}
 
-Wait_._
-
-_Decided_ may be a strong word here. _Opinion_. You should have an opinion on these things. We’re planning here and it’s still early. You may not have enough information to actually make good decisions. Designs may still be changing and so on.
-
-Having an opinion will help to keep things moving forward and will provide the basis for some sketches later on.
+We can make this optional since we might not always need it. The component will take over control of that `prop` (and subsequent `state` value) after the first render.
 
 ### Layout
 
-After you formulate an opinion on boundaries, it’s time to decide how much this component cares about layout. Sometimes it make sense for a component to care quite a bit about layout. Other times not much at all.
+Do we want **Loose Boundaries** or **Rigid Requirements**? To me, this looks like a Rigid Requirements component.
 
-In terms of layout, every component will fall somewhere between what I like to call **Loose Boundaries** and **Rigid Requirements**.
+There is a very specific layout required here, with very specific contents. This makes it easy for us to expose simple props and control everything else from within the component.
 
-#### Loose Boundaries
-
-On one end is Loose Boundaries. This is a tough one to explain without a visual aid. At [Parallax](https://www.getparallax.com/), we have a component called the `UiActionHeader`. This component is a great example of a component with loose boundaries.
-
-![](https://cdn-images-1.medium.com/max/1600/1*3Zk_2JSfRUE0ccuLD2kaUA.png)UiActionHeader
-
-That looks like a lot of variation! One way to do this would be to code up each variant and, at implementation, tell the component which one you want.
-
-Don’t do that. That’s way too much work, is confusing, and will eventually break. Instead, think about the _loose boundaries_ that might exist here.
-
-This component could be (is actually) broken up into three sections **Left**, **Center**, and **Right.**
-
-![UiActionHeader sections Left, Center, and Right](https://cdn-images-1.medium.com/max/1600/1*BnOwDY6f4Wm5vOkyVt2Lvg.png "UiActionHeader sections Left, Center, and Right")UiActionHeader sections Left, Center, and Right
-
-These three sections are props and each optionally accepts JSX. We leave it up to the implementer to decide what should go in each section, if anything at all.
-
-At the end of the day, the component itself is really quite simple. Its main responsibility is padding, basic layout, and a few minor props. By providing loose boundaries, we can create a component that is super easy to maintain. It’s consistent where we need it to be, like padding, but also provides wide flexibility where we need it. Leaving it up to the implementor to decide what could go in some pre-defined sections.
-
-#### Rigid Requirements
-
-The `UiActionHeader` above may have been a poor example. This is because that component is actually a bit of a hybrid.
-
-What if a user did not provide any JSX? Well, there are a few required props for `title` and `onClickClose`. The title is specifically placed and will always be rendered, since it’s required.
-
-This is an example of **Rigid Requirements**. An implementor _must_ provide a prop, or props, and will always be rendered in a very specific way.
+Should we assume we will _always_ have a title, image, caption, and read more link? What happens if we do not have those things? This feels like a question for UX. In the mean time, we can plan to make those required props.
 
 ### Component Internals
 
-#### Props
+Let’s take a look at our design variations and see if we can’t break this down into something that looks like a component API.
 
-It’s important to think about the data a component might need. We are, after all, planning a component that is going to be shareable. Also one that will, presumably, work within a system of existing components.
+![](https://cdn-images-1.medium.com/max/1600/1*wL9-Kczflkzd1qRbv1Zsyw.png)Mapping sections of this component to possible props or state
 
-Does the data exist? Does the data require any transformations before it gets to the component? Does the data require any transformations after it gets to the component?
+I’ve highlighted the areas we care about here in pink. Some of this may be obvious while some may not.
 
-These are all things to consider when planning. This is one part of the exercise that will actually generate some artifacts. Here, you should rough out what the props might actually be.
+We talked above about what should be considered required. But now that we are looking at the design, there might be another question or two. Should the `Read More` link be configurable? Will that _always_ be `Read More`? Will it _always_ be a link_?_
 
-    {  centerPortal: React.ReactNode;  leftPortal: React.ReactNode;  onClickClose: (event: React.MouseEvent) => void;  rightPortal: React.ReactNode;  title: string;}
+For now, we can make a few decisions:
 
-#### State
+* No, it will not be configurable
+* Yes, it will always be `Read More`
+* Yes, it will always be a link
 
-Should this component maintain its own state? Should state come from a parent? Is there state at all or is the component simply presentational?
+We can also assume that if either of these were to change in the future, we may want to consider accepting JSX. That would move the footer section of the component from **Rigid Requirements** to **Loose Boundaries**. Which, by the way, is totally acceptable!
 
-A rule of thumb here is that if a component needs state, it might add complexity. I try to offload state to parent components when it makes sense.
+So what does our API look like? How about something like this:
 
-Other times, though, it makes more sense to maintain state internally. One reason for that might be that nothing higher up the tree should care about a state property.
+    interface IProps {  articleUrl: string;  caption: string;  imageUrl: string;  isAccordion?: boolean;  isExpanded?: boolean;  title: string;}
 
-A good example of internal state might be a smart form element or an accordion.
+    // state// isOpen: boolean
+
+One other consideration to think about here. Occasionally, it’s useful to bubble events up to parent components. Sometimes there are side effects that a parent will manage that the child should not. Other times the parent needs access to the event for one reason or another.
+
+If we wanted to bubble the event, our contract changes slightly to:
+
+    interface IProps {  articleUrl: string;  caption: string;  imageUrl: string;  isAccordion?: boolean;  isExpanded?: boolean;  onClickAccordionTrigger: (event: React.SyntheticEvent) => void;    title: string;}
+
+    // state
+
+    isOpen: boolean
+
+    // should call props.onClickAccordionTrigger() with `event`setIsOpen()
 
 ### Tests
 
-We aren’t actually writing tests here. We are laying the groundwork for what those tests might cover, though.
+For some, this is the hardest part. When you are first getting into planning, it’s hard to know what someone else might need to build something. This, like anything, gets easier with practice.
 
-Think in [gherkin](https://cucumber.io/docs/gherkin/): **Given**, **When**, **Then**.
+In [Part 1](https://nategeslin.medium.com/a-beginners-guide-to-building-shareable-react-components-part-1-theory-836488f838a0) we talked about producing something close to [Gherkin](https://cucumber.io/docs/gherkin/). Personally, I tend to end up with something looks like gherkin, just a little less formal. I wrote about my variation in [Write Tests With Sentences First, Code Second](https://javascript.plainenglish.io/write-tests-with-sentences-first-code-second-e3c88d4446ef).
 
-Writing out some form of gherkin kills two birds with one stone. First, it makes it pretty easy to communicate how a component should work. Second, it makes writing appropriate tests later on a little easier. The high level parts are already written down.
+[**Write Tests With Sentences First, Code Second**  
+_Don’t dive right in, first write an outline then translate that to code_javascript.plainenglish.io](https://javascript.plainenglish.io/write-tests-with-sentences-first-code-second-e3c88d4446ef "https://javascript.plainenglish.io/write-tests-with-sentences-first-code-second-e3c88d4446ef")
 
-Gherkins are another artifact produced during planning. They don’t need to be perfect. Gherkin-ish is perfectly fine as long is it communicates clear requirements. Some thought here will go a long way towards making a smooth development phase.
+So, what does that look like for what we’re planning?
 
-![](https://cdn-images-1.medium.com/max/1600/0*Osph6ZyTLbMOd0Cr)Photo by [Ryan Snaadt](https://unsplash.com/@ryansnaadt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
+    when passed required props  then title should be visible    then the trigger icon should not be visible    and image should be visible    and caption should be visible    and read more should link to articleUrl
+
+    when isAccordion passed as false  then the trigger icon should not be visible    and image should be visible    and caption should be visible    and read more should link to articleUrl
+
+    when isAccordion is passed as true  and isExpanded is passed false    then the trigger icon should use down variation    and the image should not be visible    and the caption should not be visible    and the read more link should not be visible
+
+      and accordionTrigger is clicked    then the trigger icon should use the up variation    and the image should be visible    and the caption should be visible    and the read more link should be visible
+
+      and isExpanded is passed true    then the trigger icon should use up variation    and the image should be visible    and the caption should be visible    and the read more link should be visible
+
+      and accordionTrigger is clicked    then the trigger icon should use down variation    and the image should not be visible    and the caption should not be visible    and the read more link should not be visible
+
+![](https://cdn-images-1.medium.com/max/1600/0*NZasWgyzzrqlJwRP)Photo by [The Digital Marketing Collaboration](https://unsplash.com/@thedmcsa?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 ### Artifacts
 
-You didn’t do all this work for nothing!
+We made it! We’ve gone through the designs, asked some questions, formulated some assumptions, and created a first draft of an api. We’re ready to hand this off and move on to the next phase.
 
-You’ve reached the end of this exercise and now you should have a few things to share with your team:
+Congratulations!
 
-* Props
-* State
-* Expectations
-* Assumptions and Questions
-* Future Considerations
+Let’s review what we ended up with, we’re going to need these later in an _article-to-follow._
 
-Sometimes I’ll also include a quick code example. I’ll only do this if I feel it will be helpful to prove a path forward. I talked about doing something similar in [**Use React and Feature Flags To Roll Out New UI Components**](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 "https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729")**.**
+#### Props
 
-[**Use React and Feature Flags To Roll Out New UI Components**  
-_With The Flip of A Switch_javascript.plainenglish.io](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 "https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729")
+    interface IProps {  articleUrl: string;  caption: string;  imageUrl: string;  isAccordion?: boolean;  isExpanded?: boolean;  // depends on if we want to bubble the event  onClickAccordionTrigger: (event: React.SyntheticEvent) => void;    title: string;}
 
-A code example can help explain a complicated bit quickly. Be careful not to actually build the thing here, though. You need to allow the person building the component space to actually build the component! Pseudo code can go a long way here, just as long as it’s readable
+#### State
 
-***
+    // state
+
+    isOpen: boolean
+
+    // should call props.onClickAccordionTrigger() with `event`setIsOpen()
+
+#### Expectations
+
+    when passed required props  then title should be visible    then the trigger icon should not be visible    and image should be visible    and caption should be visible    and read more should link to articleUrl
+
+    when isAccordion passed as false  then the trigger icon should not be visible    and image should be visible    and caption should be visible    and read more should link to articleUrl
+
+    when isAccordion is passed as true  and isExpanded is passed false    then the trigger icon should use down variation    and the image should not be visible    and the caption should not be visible    and the read more link should not be visible
+
+      and accordionTrigger is clicked    then the trigger icon should use the up variation    and the image should be visible    and the caption should be visible    and the read more link should be visible
+
+      and isExpanded is passed true    then the trigger icon should use up variation    and the image should be visible    and the caption should be visible    and the read more link should be visible
+
+      and accordionTrigger is clicked    then the trigger icon should use down variation    and the image should not be visible    and the caption should not be visible    and the read more link should not be visible
+
+#### Assumptions and Questions
+
+* `articleUrl`, `caption`, `imageUrl`, and `title` props are all required and should always be passed
+* When present, the accordion trigger will always be on the right side
+* The accordion trigger will always use the same icon defined internally
+* `Read More` will always be a link
+* `Read More` will not be configurable
+
+#### Future Considerations
+
+* We might want to split this component in two to allow for a slimmer `Card` component
+* We might update the footer to accept JSX, which give implementors complete control over the `Read More` link by overriding it entirely
 
 ### Conclusion
 
-You are now armed with the theory behind planning a sharable react component!
+We’ve done the work, we’ve made some decisions, and we’ve set up a blueprint. All that is left now is to actually build (and test) the thing!
 
-* Flexibility — How flexible should we be
-* Boundaries — Where do our concerns start and stop
-* Layout — Loose Boundaries or Rigid Requirements
-* Component Internals — What data do we need and where does it come from
+Okay, It’s not _quite_ that simple. We have done a lot of good work though. The engineer that ends up doing this work is going to be starting out on the right foot.
 
-Soon I’ll be publishing Part 2 of this series where we’ll put these things to use and plan out our awesome-non-sensical-component. I hope you’ll follow along!
+Coincidentally, the engineer that ends up doing the work will be me (us), in a _link-to-future-part-3-article._
+
+Thank you for reading!
 
 ***
 
 #### References
 
-* [https://reactjs.org/](https://reactjs.org/ "https://reactjs.org/")
-* [https://angular.io/](https://angular.io/ "https://angular.io/")
-* [https://www.fillmurray.com/375/375](https://www.fillmurray.com/375/375 "https://www.fillmurray.com/375/375")
-* [https://www.getparallax.com/](https://www.getparallax.com/ "https://www.getparallax.com/")
+* [https://nategeslin.medium.com/a-beginners-guide-to-building-shareable-react-components-part-1-theory-836488f838a0](https://nategeslin.medium.com/a-beginners-guide-to-building-shareable-react-components-part-1-theory-836488f838a0 "https://nategeslin.medium.com/a-beginners-guide-to-building-shareable-react-components-part-1-theory-836488f838a0")
+* [https://www.figma.com/file/IUAl0fGpSOBYzwSIfAnWXs/shareable-react-components?node-id=0%3A1](https://www.figma.com/file/IUAl0fGpSOBYzwSIfAnWXs/shareable-react-components?node-id=0%3A1 "https://www.figma.com/file/IUAl0fGpSOBYzwSIfAnWXs/shareable-react-components?node-id=0%3A1")
 * [https://cucumber.io/docs/gherkin/](https://cucumber.io/docs/gherkin/ "https://cucumber.io/docs/gherkin/")
-* [https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 "https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729")
+* [https://javascript.plainenglish.io/write-tests-with-sentences-first-code-second-e3c88d4446ef](https://javascript.plainenglish.io/write-tests-with-sentences-first-code-second-e3c88d4446ef "https://javascript.plainenglish.io/write-tests-with-sentences-first-code-second-e3c88d4446ef")
