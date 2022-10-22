@@ -2,7 +2,7 @@
 date: 2022-05-02T19:35:01-05:00
 layout:
 - PostLayout
-Draft: true
+Draft: false
 title: Improve Build Times by Speeding up Jest Tests with Multiple Suites
 sub_heading: By Using GitHub Actions To Run Jest Test Suites In Multiple Parts
 summary: Our test suite was taking up to 30 mins to run. We split things up and brought
