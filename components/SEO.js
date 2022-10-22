@@ -4,6 +4,7 @@ import siteMetadata from '@/data/siteMetadata'
 
 const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl }) => {
   const router = useRouter()
+
   return (
     <Head>
       <title>{title}</title>
@@ -35,6 +36,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
 export const PageSEO = ({ title, description }) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
+
   return (
     <CommonSEO
       title={title}
@@ -50,6 +52,7 @@ export const TagSEO = ({ title, description }) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const router = useRouter()
+
   return (
     <>
       <CommonSEO
@@ -81,7 +84,6 @@ export const BlogSEO = ({
   images = [],
   canonicalUrl,
 }) => {
-  const router = useRouter()
   const publishedAt = new Date(date).toISOString()
   const modifiedAt = new Date(lastmod || date).toISOString()
   let imagesArr =
@@ -99,6 +101,7 @@ export const BlogSEO = ({
   })
 
   let authorList
+
   if (authorDetails) {
     authorList = authorDetails.map((author) => {
       return {
