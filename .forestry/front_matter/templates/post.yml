@@ -2,79 +2,79 @@
 label: Post
 hide_body: false
 fields:
-  - type: boolean
-    name: Draft
-    label: Draft
-    config:
-      required: true
-  - type: datetime
-    name: date
-    label: Publish Date
-    default: now
-    config:
-      date_format: MMMM DD, YYYY
-      required: true
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-    description: Title of the post
-  - type: text
-    name: sub_heading
-    label: SubHeading
-    description: Optional SubHeading for post
-  - type: textarea
-    name: summary
-    label: Summary
-    config:
-      required: true
-  - type: tag_list
-    name: tags
-    label: Tags
-  - name: authors
-    type: list
-    label: Author
-    description: Choose an Author
-    config:
-      required: true
-      use_select: true
-      source:
-        type: simple
-      options:
-        - Nate Geslin
-  - name: layout
-    type: list
-    label: Layout
-    default: PostLayout
-    config:
-      required: true
-      use_select: true
-      source:
-        type: simple
-      options:
-        - PostLayout
-        - PostSimple
-  - name: canonicalUrl
-    type: text
-    label: Canonical Url
+- type: boolean
+  name: Draft
+  label: Draft
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Publish Date
+  default: now
+  config:
+    date_format: MMMM DD, YYYY
+    required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+  description: Title of the post
+- type: text
+  name: sub_heading
+  label: SubHeading
+  description: Optional SubHeading for post
+- type: textarea
+  name: summary
+  label: Summary
+  config:
+    required: true
+- type: tag_list
+  name: tags
+  label: Tags
+- name: authors
+  type: list
+  label: Author
+  description: Choose an Author
+  config:
+    required: true
+    use_select: true
+    source:
+      type: simple
+    options:
+    - Nate Geslin
+- name: layout
+  type: list
+  label: Layout
+  default: PostLayout
+  config:
+    required: true
+    use_select: true
+    source:
+      type: simple
+    options:
+    - PostLayout
+    - PostSimple
+- name: canonicalUrl
+  type: text
+  label: Canonical Url
 pages:
-  - data/blog/a-beginner-s-guide-to-building-shareable-react-components/a-beginner-s-guide-to-building-shareable-react-components-part-1-theory-copy.md
-  - data/blog/a-beginner-s-guide-to-building-shareable-react-components/a-beginner-s-guide-to-building-shareable-react-components-part-1-theory.md
-  - data/blog/essential-software-development-tools-for-work-and-play-for-2022.md
-  - data/blog/have-slack-tell-you-when-external-services-hiccup.md
-  - data/blog/how-can-i-contribute-to-open-source.md
-  - data/blog/how-i-lost-auto-formatting-in-webstorm.md
-  - data/blog/how-i-manage-my-personal-projects.md
-  - data/blog/i-built-a-mechanical-keyboard.md
-  - data/blog/i-built-another-mechanical-keyboard.md
-  - data/blog/i-created-a-book-for-my-notes-and-you-should-too.md
-  - data/blog/improve-build-times-by-speeding-up-jest-tests-with-multiple-suites.md
-  - data/blog/lead-lessons-part-1.md
-  - data/blog/speed-up-jest-tests-by-using-the-correct-environment.mdx
-  - data/blog/tinker-with-purpose.md
-  - data/blog/use-react-and-feature-flags-to-roll-out-new-ui-components.md
-  - data/blog/what-i-look-for-when-i-hire-software-engineers.mdx
-  - data/blog/why-we-use-layered-html-canvases-at-openscope.md
-  - data/blog/write-tests-with-sentences-first-code-second.md
-  - data/blog/your-first-year-as-a-software-engineer.md
+- data/blog/a-beginner-s-guide-to-building-shareable-react-components/a-beginner-s-guide-to-building-shareable-react-components-part-1-theory-copy.md
+- data/blog/a-beginner-s-guide-to-building-shareable-react-components/a-beginner-s-guide-to-building-shareable-react-components-part-1-theory.md
+- data/blog/essential-software-development-tools-for-work-and-play-for-2022.md
+- data/blog/have-slack-tell-you-when-external-services-hiccup.md
+- data/blog/how-can-i-contribute-to-open-source.md
+- data/blog/how-i-lost-auto-formatting-in-webstorm.md
+- data/blog/how-i-manage-my-personal-projects.md
+- data/blog/i-built-a-mechanical-keyboard.md
+- data/blog/i-built-another-mechanical-keyboard.md
+- data/blog/i-created-a-book-for-my-notes-and-you-should-too.md
+- data/blog/improve-build-times-by-speeding-up-jest-tests-with-multiple-suites.md
+- data/blog/lead-lessons-part-1.md
+- data/blog/speed-up-jest-tests-by-using-the-correct-environment.mdx
+- data/blog/tinker-with-purpose.md
+- data/blog/use-react-and-feature-flags-to-roll-out-new-ui-components.md
+- data/blog/what-i-look-for-when-i-hire-software-engineers.mdx
+- data/blog/why-we-use-layered-html-canvases-at-openscope.md
+- data/blog/write-tests-with-sentences-first-code-second.md
+- data/blog/your-first-year-as-a-software-engineer.md
