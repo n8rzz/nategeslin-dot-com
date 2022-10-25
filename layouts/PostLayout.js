@@ -17,7 +17,7 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, images, subHeading, tags } = frontMatter
+  const { slug, fileName, date, title, images, sub_heading, tags } = frontMatter
 
   return (
     <SectionContainer>
@@ -43,7 +43,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               </dl>
               <div>
                 <PageTitle>{title}</PageTitle>
-                {subHeading !== '' && <h2>{subHeading}</h2>}
+                {sub_heading !== '' && <h2>{sub_heading}</h2>}
               </div>
             </div>
           </header>

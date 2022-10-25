@@ -27,6 +27,7 @@ export async function getStaticProps({ params }) {
   const authorList = post.frontMatter.authors || ['default']
   const authorPromise = authorList.map(async (author) => {
     const authorResults = await getFileBySlug('authors', [author])
+
     return authorResults.frontMatter
   })
   const authorDetails = await Promise.all(authorPromise)
@@ -34,10 +35,18 @@ export async function getStaticProps({ params }) {
   // rss
   if (allPosts.length > 0) {
     const rss = generateRss(allPosts)
+
     fs.writeFileSync('./public/feed.xml', rss)
   }
 
-  return { props: { post, authorDetails, prev, next } }
+  return {
+    props: {
+      post,
+      authorDetails,
+      prev,
+      next,
+    },
+  }
 }
 
 export default function Blog({ post, authorDetails, prev, next }) {
@@ -47,13 +56,13 @@ export default function Blog({ post, authorDetails, prev, next }) {
     <>
       {frontMatter.draft !== true ? (
         <MDXLayoutRenderer
-          layout={frontMatter.layout || DEFAULT_LAYOUT}
-          toc={toc}
-          mdxSource={mdxSource}
-          frontMatter={frontMatter}
           authorDetails={authorDetails}
-          prev={prev}
+          frontMatter={frontMatter}
+          layout={frontMatter.layout || DEFAULT_LAYOUT}
+          mdxSource={mdxSource}
           next={next}
+          prev={prev}
+          toc={toc}
         />
       ) : (
         <div className="mt-24 text-center">
