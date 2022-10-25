@@ -56,5 +56,6 @@ fields:
   label: Canonical Url
 pages:
 - data/drafts/a-beginner-s-guide-to-building-shareable-react-components-part-3-scaffolding.md
+- data/drafts/create-a-test-wrapper-component-to-help-with-tests.md
 - data/drafts/lead-projects-with-people-first.md
 - data/drafts/write-your-own-vscode-theme.md
