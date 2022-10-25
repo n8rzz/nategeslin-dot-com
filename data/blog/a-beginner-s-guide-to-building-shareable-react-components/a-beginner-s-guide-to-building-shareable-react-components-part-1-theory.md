@@ -1,23 +1,23 @@
 ---
 date: 2022-10-21T20:20:37-05:00
 layout:
-- PostLayout
+  - PostLayout
 Draft: true
 title: A Beginner's Guide To Building Shareable React Components, Part 1: Theory
 sub_heading: A solid plan leads to a solid foundation
 summary: Planning for shareable components is similar no matter the library. Today
   I talk about some of the theory behind planning new React components.
 tags:
-- React
-- Planning
-- React Components
-- Software Development
-- Reactjs
+  - React
+  - Planning
+  - React Components
+  - Software Development
+  - Reactjs
 authors:
-- Nate Geslin
+  - Nate Geslin
 canonicalUrl: ''
-
 ---
+
 ![](https://cdn-images-1.medium.com/max/1600/0*gl9VQkgWN_AS-JW7)Photo by [Barn Images](https://unsplash.com/@barnimages?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)
 
 Over the years, I have been lucky enough to be part of several projects where we built component libraries. Or built components that were shared across multiple projects. Most of these projects used [React](https://reactjs.org/), some used [Angular](https://angular.io/). The strategies behind planning shareable components is similar no matter the library or framework.
@@ -30,17 +30,17 @@ You’re not.
 
 It **_will_** cost you much more time in the future. Not planning is expensive.
 
-***
+---
 
 Today we are going to talk about some of the things I like to do when planning components. These aren’t hard and fast rules, just things I’ve found success with.
 
-It’s important to note, the output of this first phase is not code. The output of this work is a blueprint someone could use to build a component_._ In real life, this is the sort of work I would do when planning work for my team. I don’t always go this deep. I do when there are a lot of decisions to be made. Making some, not all, of those decisions up front helps development move efficiently.
+It’s important to note, the output of this first phase is not code. The output of this work is a blueprint someone could use to build a component*.* In real life, this is the sort of work I would do when planning work for my team. I don’t always go this deep. I do when there are a lot of decisions to be made. Making some, not all, of those decisions up front helps development move efficiently.
 
 ### Design
 
 I’m not a designer. I like to think I have a good eye for things, but I couldn’t design my way out of a cardboard box. I’m an engineer. For the sake of this series, and with all that in mind, it may be helpful to reference the following design while you read.
 
-![](https://cdn-images-1.medium.com/max/1600/1*99Te06XzOxbaxqVa7rBg9A.png)Card or Accordion component with Steve Zissou, from The Life Aquatic ([https://www.fillmurray.com/375/375](https://www.fillmurray.com/375/375 "https://www.fillmurray.com/375/375"))
+![](https://cdn-images-1.medium.com/max/1600/1*99Te06XzOxbaxqVa7rBg9A.png)Card or Accordion component with Steve Zissou, from The Life Aquatic ([https://www.fillmurray.com/375/375](https://www.fillmurray.com/375/375 'https://www.fillmurray.com/375/375'))
 
 This is a silly design, I know. This component isn’t necessarily supposed to be useful in real life. Instead, its purpose is to provide something for us to design, build and test.
 
@@ -52,7 +52,7 @@ This series assumes the deliverables will be written from scratch. In real life,
 
 Thankfully, I’m not going to argue for or against component libraries today. Just know that they are a thing and, if a team is using them, may invalidate most of what you’re about to read.
 
-***
+---
 
 ### Flexibility
 
@@ -76,7 +76,7 @@ What should this component care about? Does it have state? Does it need to care 
 
 These are things that must be decided on first before you can start sketching out API contracts.
 
-Wait_._
+Wait*.*
 
 _Decided_ may be a strong word here. _Opinion_. You should have an opinion on these things. We’re planning here and it’s still early. You may not have enough information to actually make good decisions. Designs may still be changing and so on.
 
@@ -100,7 +100,7 @@ Don’t do that. That’s way too much work, is confusing, and will eventually b
 
 This component could be (is actually) broken up into three sections **Left**, **Center**, and **Right.**
 
-![UiActionHeader sections Left, Center, and Right](https://cdn-images-1.medium.com/max/1600/1*BnOwDY6f4Wm5vOkyVt2Lvg.png "UiActionHeader sections Left, Center, and Right")UiActionHeader sections Left, Center, and Right
+![UiActionHeader sections Left, Center, and Right](https://cdn-images-1.medium.com/max/1600/1*BnOwDY6f4Wm5vOkyVt2Lvg.png 'UiActionHeader sections Left, Center, and Right')UiActionHeader sections Left, Center, and Right
 
 These three sections are props and each optionally accepts JSX. We leave it up to the implementer to decide what should go in each section, if anything at all.
 
@@ -124,7 +124,15 @@ Does the data exist? Does the data require any transformations before it gets to
 
 These are all things to consider when planning. This is one part of the exercise that will actually generate some artifacts. Here, you should rough out what the props might actually be.
 
-    {  centerPortal: React.ReactNode;  leftPortal: React.ReactNode;  onClickClose: (event: React.MouseEvent) => void;  rightPortal: React.ReactNode;  title: string;}
+```ts
+{
+  centerPortal: React.ReactNode;
+  leftPortal: React.ReactNode;
+  onClickClose: (event: React.MouseEvent) => void;
+  rightPortal: React.ReactNode;
+  title: string;
+}
+```
 
 #### State
 
@@ -154,39 +162,39 @@ You didn’t do all this work for nothing!
 
 You’ve reached the end of this exercise and now you should have a few things to share with your team:
 
-* Props
-* State
-* Expectations
-* Assumptions and Questions
-* Future Considerations
+- Props
+- State
+- Expectations
+- Assumptions and Questions
+- Future Considerations
 
-Sometimes I’ll also include a quick code example. I’ll only do this if I feel it will be helpful to prove a path forward. I talked about doing something similar in [**Use React and Feature Flags To Roll Out New UI Components**](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 "https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729")**.**
+Sometimes I’ll also include a quick code example. I’ll only do this if I feel it will be helpful to prove a path forward. I talked about doing something similar in [**Use React and Feature Flags To Roll Out New UI Components**](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 'https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729')**.**
 
-[**Use React and Feature Flags To Roll Out New UI Components**  
-_With The Flip of A Switch_javascript.plainenglish.io](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 "https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729")
+[**Use React and Feature Flags To Roll Out New UI Components**
+\_With The Flip of A Switch_javascript.plainenglish.io](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 'https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729')
 
 A code example can help explain a complicated bit quickly. Be careful not to actually build the thing here, though. You need to allow the person building the component space to actually build the component! Pseudo code can go a long way here, just as long as it’s readable
 
-***
+---
 
 ### Conclusion
 
 You are now armed with the theory behind planning a sharable react component!
 
-* Flexibility — How flexible should we be
-* Boundaries — Where do our concerns start and stop
-* Layout — Loose Boundaries or Rigid Requirements
-* Component Internals — What data do we need and where does it come from
+- Flexibility — How flexible should we be
+- Boundaries — Where do our concerns start and stop
+- Layout — Loose Boundaries or Rigid Requirements
+- Component Internals — What data do we need and where does it come from
 
 Soon I’ll be publishing Part 2 of this series where we’ll put these things to use and plan out our awesome-non-sensical-component. I hope you’ll follow along!
 
-***
+---
 
 #### References
 
-* [https://reactjs.org/](https://reactjs.org/ "https://reactjs.org/")
-* [https://angular.io/](https://angular.io/ "https://angular.io/")
-* [https://www.fillmurray.com/375/375](https://www.fillmurray.com/375/375 "https://www.fillmurray.com/375/375")
-* [https://www.getparallax.com/](https://www.getparallax.com/ "https://www.getparallax.com/")
-* [https://cucumber.io/docs/gherkin/](https://cucumber.io/docs/gherkin/ "https://cucumber.io/docs/gherkin/")
-* [https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 "https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729")
+- [https://reactjs.org/](https://reactjs.org/ 'https://reactjs.org/')
+- [https://angular.io/](https://angular.io/ 'https://angular.io/')
+- [https://www.fillmurray.com/375/375](https://www.fillmurray.com/375/375 'https://www.fillmurray.com/375/375')
+- [https://www.getparallax.com/](https://www.getparallax.com/ 'https://www.getparallax.com/')
+- [https://cucumber.io/docs/gherkin/](https://cucumber.io/docs/gherkin/ 'https://cucumber.io/docs/gherkin/')
+- [https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729](https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729 'https://javascript.plainenglish.io/use-react-and-feature-flags-to-roll-out-new-ui-components-eba130f28729')
