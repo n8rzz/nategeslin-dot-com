@@ -2,56 +2,57 @@
 label: Post
 hide_body: false
 fields:
-  - type: boolean
-    name: Draft
-    label: Draft
-    config:
-      required: true
-  - type: datetime
-    name: date
-    label: Publish Date
-    default: now
-    config:
-      date_format: MMMM DD, YYYY
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-    description: Title of the post
-  - type: text
-    name: sub_heading
-    label: SubHeading
-    description: Optional SubHeading for post
-  - type: textarea
-    name: summary
-    label: Summary
-  - type: tag_list
-    name: tags
-    label: Tags
-  - name: authors
-    type: list
-    label: Author
-    description: Choose an Author
-    config:
-      use_select: true
-      source:
-        type: simple
-      options:
-        - Nate Geslin
-  - name: layout
-    type: list
-    label: Layout
-    default: PostLayout
-    config:
-      required: true
-      use_select: true
-      source:
-        type: simple
-      options:
-        - PostLayout
-        - PostSimple
-  - name: canonicalUrl
-    type: text
-    label: Canonical Url
+- type: boolean
+  name: Draft
+  label: Draft
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Publish Date
+  default: now
+  config:
+    date_format: MMMM DD, YYYY
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+  description: Title of the post
+- type: text
+  name: sub_heading
+  label: SubHeading
+  description: Optional SubHeading for post
+- type: textarea
+  name: summary
+  label: Summary
+- type: tag_list
+  name: tags
+  label: Tags
+- name: authors
+  type: list
+  label: Author
+  description: Choose an Author
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - Nate Geslin
+- name: layout
+  type: list
+  label: Layout
+  default: PostLayout
+  config:
+    required: true
+    use_select: true
+    source:
+      type: simple
+    options:
+    - PostLayout
+    - PostSimple
+- name: canonicalUrl
+  type: text
+  label: Canonical Url
 pages:
+- data/drafts/a-beginner-s-guide-to-building-shareable-react-components-part-3-scaffolding.md
