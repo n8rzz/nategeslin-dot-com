@@ -2,25 +2,25 @@
 title: Speed Up Jest Tests By Using The Correct Environment
 date: 2021-12-27T00:00:00-06:00
 tags:
-- jest
-- typescript
-- reat
-- javascript
-- programming
+  - jest
+  - typescript
+  - reat
+  - javascript
+  - programming
 draft: false
 summary: Recently at Parallax, we noticed our UI test suite was taking longer and
   longer to finish. We found a quick way to speed this up.
 subHeading: The DOM is expensive. Use it only when you need it.
 images: []
 layout:
-- PostLayout
+  - PostLayout
 canonicalUrl: ''
 Draft: false
 sub_heading: The DOM is expensive. Use it only when you need it.
 authors:
-- Nate Geslin
-
+  - Nate Geslin
 ---
+
 # Speed Up Jest Tests By Using The Correct Environment
 
 ## The DOM is expensive. Use it only when you need it.

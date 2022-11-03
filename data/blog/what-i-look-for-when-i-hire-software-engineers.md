@@ -2,24 +2,24 @@
 title: What I Look For When I Hire Software Engineers
 date: 2021-11-20T20:00:00-06:00
 tags:
-- programming
-- career advice
-- software development
-- coding
-- interview
+  - programming
+  - career advice
+  - software development
+  - coding
+  - interview
 draft: false
 summary: What makes a good hire? It’s not what you might think...
 images: []
 layout:
-- PostLayout
+  - PostLayout
 canonicalUrl: ''
 Draft: false
 hero_image: ''
 authors:
-- Nate Geslin
+  - Nate Geslin
 sub_heading: It Isn’t All About Code
-
 ---
+
 # What I Look For When I Hire Software Engineers
 
 ## It Isn’t All About Code

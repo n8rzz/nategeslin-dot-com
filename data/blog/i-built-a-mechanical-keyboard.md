@@ -1,7 +1,7 @@
 ---
-date: 2022-10-21T23:14:03-05:00
+date: 2022-09-21T23:14:03-05:00
 layout:
-- PostLayout
+  - PostLayout
 Draft: false
 title: I Built A Mechanical Keyboard
 sub_heading: The Lucky Jade Build
@@ -9,16 +9,16 @@ summary: It’s been a little over two years since my last build, and this makes
   3rd full build. I am by no means an expert, but I have been lurking around the hobby
   for a number of years. I’ll mention…
 tags:
-- Mechanical Keyboards
-- Mechkey
-- Keyboards
-- Software Engineering
-- Design
+  - Mechanical Keyboards
+  - Mechkey
+  - Keyboards
+  - Software Engineering
+  - Design
 authors:
-- Nate Geslin
+  - Nate Geslin
 canonicalUrl: ''
-
 ---
+
 ![](https://cdn-images-1.medium.com/max/1600/1*s0hG30ysEgktt1A9uVtq9w.jpeg)The finished build: 65% Lucky Jade mechanical keyboard.
 
 ### Introduction
@@ -29,7 +29,7 @@ It’s been a little over two years since my last build, and this makes my 3rd f
 
 I’ll mention straight away that this build could have gone better. Some things went well; however, there were some rookie mistakes I made early on in the build that would have made for a much softer landing in the end. Overall, the build did produce a nice looking keyboard that I look forward to using for the next little while. Who knows, maybe it’ll be my next daily driver?
 
-***
+---
 
 ### Parts of a Mechanical Keyboard
 
@@ -47,9 +47,9 @@ There are hundreds of different switches out there to choose from, but all of th
 
 _Read more:_
 
-[https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches](https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches "https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches")
+[https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches](https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches 'https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches')
 
-[https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020](https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020 "https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020")
+[https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020](https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020 'https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020')
 
 **Stabilizer**
 
@@ -67,8 +67,8 @@ A PCB is not necessary for a build, it is possible to hand-wire a keyboard if on
 
 _Read More:_
 
-* [https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/](https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/ "https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/")
-* [https://matt3o.com/hand-wiring-a-custom-keyboard/](https://matt3o.com/hand-wiring-a-custom-keyboard/ "https://matt3o.com/hand-wiring-a-custom-keyboard/")
+- [https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/](https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/ 'https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/')
+- [https://matt3o.com/hand-wiring-a-custom-keyboard/](https://matt3o.com/hand-wiring-a-custom-keyboard/ 'https://matt3o.com/hand-wiring-a-custom-keyboard/')
 
 **Case**
 
@@ -76,9 +76,9 @@ It is typically made out of some sort of metal or polycarbonate and is the conta
 
 _Read more_ :
 
-* [https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/](https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/ "https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/")
+- [https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/](https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/ 'https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/')
 
-***
+---
 
 ### Sourcing Parts
 
@@ -92,15 +92,15 @@ We’ll be using silent tactile switches. This means you can feel a little bump 
 
 **List of Parts:**
 
-* [Lucky Jade Keycaps](https://cannonkeys.com/products/gb-kat-lucky-jade)
-* [Tada68 65% Case](https://kbdfans.com/products/kbdfans-tada68-aluminum-case)
-* Tada68 PCB
-* [Aliaz Silent Tactile Switch / 60g](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile)
-* [Novelkeys x Kailh Box Heavy Switches, Burnt Orange](https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581)
+- [Lucky Jade Keycaps](https://cannonkeys.com/products/gb-kat-lucky-jade)
+- [Tada68 65% Case](https://kbdfans.com/products/kbdfans-tada68-aluminum-case)
+- Tada68 PCB
+- [Aliaz Silent Tactile Switch / 60g](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile)
+- [Novelkeys x Kailh Box Heavy Switches, Burnt Orange](https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581)
 
 You’ll notice I have two different sets of switches listed. I like to use a different switch for the outside keys. It gives a slightly different feel for those keys. I don’t know, maybe its a little weird, but I like it so 🤷‍♂.
 
-***
+---
 
 ### Keyboard Build Preparation
 
@@ -146,9 +146,9 @@ This is where we start putting all the parts together. I still like to take my t
 
 Here is the method to the placement of first few switches:
 
-* All the keys that need stabilizers
-* Each corner
-* One along the top row
+- All the keys that need stabilizers
+- Each corner
+- One along the top row
 
 ![Several switches snapped into plate on the switch plate, just before soldering to the PCB](https://cdn-images-1.medium.com/max/1200/1*fIL4aV5YePknEg4wnA1BAg.jpeg)
 
@@ -192,20 +192,20 @@ This is a little more delicate that it first seems. The screws are small and the
 
 It wasn’t until this phase of the project that I realized I made a boo-boo. I put dielectric grease around the inside of two of the stabilizer housings. Admittedly, this was a rookie mistake. Putting grease here had the opposite effect; it made the stabilizers stick. This means that two keys would not recoil after being pressed.
 
-Thankfully, this is a solvable problem. It did require an extra amount of work though and was more than a little a pain in the a**.
+Thankfully, this is a solvable problem. It did require an extra amount of work though and was more than a little a pain in the a\*\*.
 
 Here are the steps for getting this bug resolved:
 
-* Pull out around 10 keycaps to get to each mounting screw
-* Un-mount PCB from case
-* De-solder the two switches with affected stabilizers
-* Remove sticky stabilizers
-* Clean grease out of sticky stabilizers.
-* Re-attach stabilizers
-* Re-solder removed switches
-* Test fix (it worked!)
-* Re-attach PCB to case
-* Place removed keycaps back on their switches
+- Pull out around 10 keycaps to get to each mounting screw
+- Un-mount PCB from case
+- De-solder the two switches with affected stabilizers
+- Remove sticky stabilizers
+- Clean grease out of sticky stabilizers.
+- Re-attach stabilizers
+- Re-solder removed switches
+- Test fix (it worked!)
+- Re-attach PCB to case
+- Place removed keycaps back on their switches
 
 ![](https://cdn-images-1.medium.com/max/1200/1*aXnM81POxyNspr914_g5KA.jpeg)
 
@@ -239,23 +239,23 @@ This was a fun build and was a long time coming, too. Some of the parts for this
 
 Overall the build went fairly well. There were some bumps along the way, sure, but we made it through and ended the day with a pretty great feeling (and looking) mechanical keyboard.
 
-***
+---
 
 **References**
 
-* [https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches](https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches "https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches")
-* [https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020](https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020 "https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020")
-* [https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/](https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/ "https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/")
-* [https://matt3o.com/hand-wiring-a-custom-keyboard/](https://matt3o.com/hand-wiring-a-custom-keyboard/ "https://matt3o.com/hand-wiring-a-custom-keyboard/")
-* [https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/](https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/ "https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/")
-* [https://config.qmk.fm/#/test](https://config.qmk.fm/#/test "https://config.qmk.fm/#/test")
-* [https://www.youtube.com/watch?v=cD5Zj-ZgMLA](https://www.youtube.com/watch?v=cD5Zj-ZgMLA "https://www.youtube.com/watch?v=cD5Zj-ZgMLA")
-* [https://monkeytype.com/](https://monkeytype.com/ "https://monkeytype.com/")
-* [https://config.qmk.fm/#/tada68/LAYOUT_65_ansi](https://config.qmk.fm/#/tada68/LAYOUT_65_ansi "https://config.qmk.fm/#/tada68/LAYOUT_65_ansi")
+- [https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches](https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches 'https://aziocorp.com/blogs/blog/get-to-know-your-keyboard-the-3-types-of-mechanical-switches')
+- [https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020](https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020 'https://dygma.com/blogs/stories/the-ultimate-guide-to-mechanical-keyboard-switches-for-2020')
+- [https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/](https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/ 'https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/')
+- [https://matt3o.com/hand-wiring-a-custom-keyboard/](https://matt3o.com/hand-wiring-a-custom-keyboard/ 'https://matt3o.com/hand-wiring-a-custom-keyboard/')
+- [https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/](https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/ 'https://www.reddit.com/r/MechanicalKeyboards/comments/n1sq5k/keyboard_size_guide/')
+- [https://config.qmk.fm/#/test](https://config.qmk.fm/#/test 'https://config.qmk.fm/#/test')
+- [https://www.youtube.com/watch?v=cD5Zj-ZgMLA](https://www.youtube.com/watch?v=cD5Zj-ZgMLA 'https://www.youtube.com/watch?v=cD5Zj-ZgMLA')
+- [https://monkeytype.com/](https://monkeytype.com/ 'https://monkeytype.com/')
+- [https://config.qmk.fm/#/tada68/LAYOUT_65_ansi](https://config.qmk.fm/#/tada68/LAYOUT_65_ansi 'https://config.qmk.fm/#/tada68/LAYOUT_65_ansi')
 
 **Parts**
 
-* [https://cannonkeys.com/products/gb-kat-lucky-jade](https://cannonkeys.com/products/gb-kat-lucky-jade "https://cannonkeys.com/products/gb-kat-lucky-jade")
-* h[ttps://kbdfans.com/products/kbdfans-tada68-aluminum-case](https://kbdfans.com/products/kbdfans-tada68-aluminum-case)
-* [https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile "https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile")
-* [https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581](https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581 "https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581")
+- [https://cannonkeys.com/products/gb-kat-lucky-jade](https://cannonkeys.com/products/gb-kat-lucky-jade 'https://cannonkeys.com/products/gb-kat-lucky-jade')
+- h[ttps://kbdfans.com/products/kbdfans-tada68-aluminum-case](https://kbdfans.com/products/kbdfans-tada68-aluminum-case)
+- [https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile 'https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile')
+- [https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581](https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581 'https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581')
