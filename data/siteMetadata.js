@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Nate Geslin',
   author: 'Nate Geslin',
-  headerTitle: 'Human',
+  headerTitle: 'n8g',
   description: 'Nate Geslin Blog',
   language: 'en-us',
   theme: 'system', // system, dark or light
