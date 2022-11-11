@@ -38,6 +38,7 @@ module.exports = {
             color: theme('colors.gray.700'),
             a: {
               color: theme('colors.secondary.500'),
+              textDecoration: 'none',
               '&:hover': {
                 color: `${theme('colors.secondary.600')} !important`,
               },
@@ -64,7 +65,7 @@ module.exports = {
               backgroundColor: theme('colors.gray.800'),
             },
             code: {
-              color: theme('colors.pink.600'),
+              color: theme('colors.orange.600'),
               backgroundColor: theme('colors.gray.100'),
               paddingLeft: '4px',
               paddingRight: '4px',

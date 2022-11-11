@@ -256,6 +256,6 @@ Overall the build went fairly well. There were some bumps along the way, sure, b
 **Parts**
 
 - [https://cannonkeys.com/products/gb-kat-lucky-jade](https://cannonkeys.com/products/gb-kat-lucky-jade 'https://cannonkeys.com/products/gb-kat-lucky-jade')
-- h[ttps://kbdfans.com/products/kbdfans-tada68-aluminum-case](https://kbdfans.com/products/kbdfans-tada68-aluminum-case)
+- [https://kbdfans.com/products/kbdfans-tada68-aluminum-case](https://kbdfans.com/products/kbdfans-tada68-aluminum-case)
 - [https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile](https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile 'https://kbdfans.com/collections/aliaz-switches/products/pre-orderaliaz-silent-switch-tactile')
 - [https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581](https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581 'https://kbdfans.com/products/novelkeys-x-kailh-box-heavy-switches-10pcs?variant=2467740909581')
