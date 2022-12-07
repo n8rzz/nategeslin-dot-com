@@ -1,7 +1,7 @@
 ---
-date: 2022-09-21T23:14:03-05:00
+date: 2021-09-02T00:00:00-05:00
 layout:
-  - PostLayout
+- PostLayout
 Draft: false
 title: I Built A Mechanical Keyboard
 sub_heading: The Lucky Jade Build
@@ -9,16 +9,16 @@ summary: It’s been a little over two years since my last build, and this makes
   3rd full build. I am by no means an expert, but I have been lurking around the hobby
   for a number of years. I’ll mention…
 tags:
-  - Mechanical Keyboards
-  - Mechkey
-  - Keyboards
-  - Software Engineering
-  - Design
+- Mechanical Keyboards
+- Mechkey
+- Keyboards
+- Software Engineering
+- Design
 authors:
-  - Nate Geslin
+- Nate Geslin
 canonicalUrl: ''
----
 
+---
 ![](https://cdn-images-1.medium.com/max/1600/1*s0hG30ysEgktt1A9uVtq9w.jpeg)The finished build: 65% Lucky Jade mechanical keyboard.
 
 ### Introduction
