@@ -1,5 +1,5 @@
 ---
-date: 2021-12-21T20:31:21-06:00
+date: 2021-12-29T20:31:21-06:00
 layout:
 - PostLayout
 Draft: false
@@ -17,7 +17,6 @@ authors: []
 canonicalUrl: ''
 
 ---
-
 ![](https://cdn-images-1.medium.com/max/1600/1*ZD3HPiIyADy9Yx52Ueclew.jpeg)
 
 I’m starting to build a nice little mechanical keyboard collection. I have a few 60%, a 65%, and a 75%. These are great, and I love each like a child. One thing I did not have was any kind of ergo split or [Alice](https://geekhack.org/index.php?topic=95054.0)-type layout.
