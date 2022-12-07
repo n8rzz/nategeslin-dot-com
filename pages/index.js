@@ -18,6 +18,11 @@ export default function Home({ posts }) {
             Nate Geslin
           </h1>
         </div>
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          Experienced Senior Software Engineer with a demonstrated history of working in the
+          information technology and services industry. Skilled in Typescript, HTML, CSS, Node,
+          Ruby, Python, and Golang.
+        </div>
       </div>
     </>
   )

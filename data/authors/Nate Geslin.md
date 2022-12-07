@@ -10,4 +10,4 @@ linkedin: 'https://www.linkedin.com/in/nate-geslin/'
 medium: 'https://nategeslin.medium.com/'
 ---
 
-Nate Geslin is the Senior UI Lead at [Parallax](https://getparallax.com). He has been a software engineer for over 10 years. In his free time, Nate enjoys all sorts of hobbies like watchmaking, futures/forex/options trading, aviation,
+Nate Geslin is the Senior UI Lead at [Parallax](https://getparallax.com). He has been a software engineer for over 10 years.
