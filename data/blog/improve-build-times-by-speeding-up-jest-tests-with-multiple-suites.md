@@ -1,5 +1,5 @@
 ---
-date: 2022-05-02T19:35:01-05:00
+date: 2022-05-02T19:35:01.000-05:00
 layout:
 - PostLayout
 Draft: false
@@ -38,10 +38,12 @@ At Parallax, our app follows a strict file naming convention where we’ve borro
 
 Generally, our convention is `.concern.ts` or `.concern.tsx`. I’ll show you some examples:
 
-    domain/department/department.utils.tsdomain/department/department.service.tsdomain/department/models/Department.model.ts
-
-    components/pages/department-page/DepartmentPage.tsxcomponents/pages/department-page/DepartmentPage.constants.tscomponents/pages/department-page/DepartmentPage.store.tscomponents/pages/department-page/DepartmentPage.utils.ts
-
+    domain/department/department.utils.ts
+    domain/department/department.service.ts
+    domain/department/models/Department.model.ts
+    components/pages/department-page/DepartmentPage.tsx
+    components/pages/department-page/DepartmentPage.constants.tscomponents/pages/department-page/DepartmentPage.store.ts
+    components/pages/department-page/DepartmentPage.utils.ts
     components/ui/ui-button/UiButton.tsx
 
 Why do we care (and we care a lot) so much about this structure? It makes it easy for a person or machine to find things.
